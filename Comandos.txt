@@ -1,0 +1,18 @@
+dotnet new sln -n GameTOPSolution
+dotnet add GameTop/GameTop.csproj reference Gamtop.LIB/GameTop.LIB.csproj
+dotnet sln GameTOPSolution.sln add GameTop/GameTop.csproj Gamtop.LIB/GameTop.LIB.csproj
+dotnet new classlib -n GameTOP.Interface
+dotnet add GameTop/GameTop.csproj reference GameTop.Interface/GameTop.Interface.csproj
+dotnet sln GameTOPSolution.sln add GameTop.Interface/GameTop.Interface.csproj
+
+dotnet new -h
+dotnet new web -n ProAgil.Web
+dotnet new mvc -n ProAgil.MVC
+dotnet new webapi -n ProAgil.WebAPI
+
+
+dotnet ef migrations remove --force;
+dotnet restore ;
+dotnet build ; 
+dotnet ef migrations add init ;
+dotnet ef database update ; 
