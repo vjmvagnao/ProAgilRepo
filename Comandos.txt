@@ -16,3 +16,7 @@ dotnet restore ;
 dotnet build ; 
 dotnet ef migrations add init ;
 dotnet ef database update ; 
+
+INSTALACAO DO ANGULAR
+npm config set registry http://registry.npmjs.org
+npm install -g @angular/cli
