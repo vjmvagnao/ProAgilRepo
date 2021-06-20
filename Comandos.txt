@@ -20,3 +20,24 @@ dotnet ef database update ;
 INSTALACAO DO ANGULAR
 npm config set registry http://registry.npmjs.org
 npm install -g @angular/cli
+
+RODAR O PROJETO ANGULAR
+ng serve
+
+INSTALAR BOOTSTRAP
+npm install bootstrap
+
+INSTALAR Font Awesome
+npm install --save @fortawesome/fontawesome-free
+
+INSTALAR BOOT E Awesome no Projeto Angular
+npm i --save bootstrap @fortawesome/fontawesome-free
+
+DESISTALAR
+npm uninstall bootstrap @fortawesome/fontawesome-free
+
+REFERENCIAR USANDO O ANGULAR
+Arquivo styles do angular
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
